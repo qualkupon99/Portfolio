@@ -503,10 +503,19 @@ a { text-decoration: none; color: inherit; }
   .skill-column { padding: 40px 20px; }
   
   /* Navbar */
-  .nav-container { height: 70px; }
-  .nav-logo { font-size: 1.3rem !important; }
-  .nav-links { display: none; /* Hidden on mobile constraints */ }
-  .nav-cta { padding: 8px 16px; font-size: 0.8rem; }
+  .nav-container { height: auto; flex-wrap: wrap; padding: 16px 0; }
+  .nav-logo { font-size: 1.3rem !important; order: 1; margin-bottom: 8px; }
+  .nav-cta { padding: 8px 16px; font-size: 0.8rem; order: 2; margin-bottom: 8px; }
+  .nav-links {
+    display: flex;
+    width: 100%;
+    order: 3;
+    justify-content: center;
+    gap: 16px;
+    font-size: 0.9rem;
+    padding-top: 8px;
+    border-top: 1px solid var(--clr-border-subtle);
+  }
   
   /* Footer */
   .footer-editorial { padding: 80px 0 30px; }
